@@ -1,0 +1,229 @@
+@media only screen and (max-width: 768px) {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    background-color: rgba(232, 236, 241, 1);
+    border-radius: 3px;
+    border: none;
+  }
+  body {
+    font-family: "STIX Two Math", serif;
+  }
+  #main1,
+  #main2 {
+    letter-spacing: 12px;
+    margin: 0;
+  }
+
+  .fas {
+    color: rgb(212, 209, 209);
+  }
+  .percentages {
+    background-color: #045557;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 23px;
+  }
+  #custom {
+    background-color: rgba(232, 236, 241, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+    color: rgba(108, 122, 137, 1);
+  }
+  #bill_heading,
+  #sel_tip,
+  #nop {
+    color: rgba(108, 122, 137, 1);
+  }
+  footer {
+    background-color: #045557;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #nop {
+    margin-bottom: 5px;
+  }
+  #group_results,
+  #individual_results {
+    background-color: #045557;
+    font-size: 28px;
+    color: rgb(64, 224, 208);
+  }
+
+  #ResetAllValues {
+    background-color: rgb(64, 224, 208);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+  }
+  #NumberOfPeople,
+  #BillAmount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #045557;
+    padding-right: 20px;
+    text-align: right;
+  }
+  #BillAmount::placeholder {
+    color: #045557;
+  }
+
+  #tip_amount,
+  #tip_amount2 {
+    color: white;
+  }
+  #person1,
+  #person2 {
+    color: #d3e2e285;
+  }
+  main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+    margin-top: -30px;
+    z-index: 1;
+    padding: 20px;
+  }
+  header {
+    z-index: -1;
+    background-color: rgb(184, 217, 224);
+  }
+  #custom::placeholder {
+    font-size: 20px;
+    text-align: center;
+  }
+  #errorMessage {
+    color: rgba(255, 0, 0, 0.616);
+    font-weight: bold;
+  }
+}
+
+/*Desktop view*/
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: rgb(184, 217, 224);
+  }
+
+  #wrapperCalc {
+    background-color: white;
+    margin: 40px 100px 40px 100px;
+    border-radius: 20px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  #main1 {
+    margin-bottom: 0;
+  }
+  #main2 {
+    margin-top: 0;
+  }
+
+  input[type="number"] {
+    text-align: right;
+    background-color: rgba(232, 236, 241, 1);
+    border-radius: 3px;
+    border: none;
+  }
+  body {
+    font-family: "STIX Two Math", serif;
+  }
+
+  .fas {
+    color: rgb(212, 209, 209);
+  }
+  .percentages {
+    background-color: #045557;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+    text-align: center;
+  }
+  #custom {
+    background-color: rgba(232, 236, 241, 1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+    color: rgba(108, 122, 137, 1);
+    text-align: center;
+  }
+  #bill_heading,
+  #sel_tip,
+  #nop {
+    color: rgba(108, 122, 137, 1);
+  }
+  footer {
+    background-color: #045557;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  #group_results,
+  #individual_results {
+    background-color: #045557;
+    font-size: 40px;
+    color: rgb(64, 224, 208);
+    margin-top: 21.2;
+  }
+  #individual_results::placeholder,
+  #group_results::placeholder {
+    color: rgb(64, 224, 208);
+  }
+  #ResetAllValues {
+    background-color: rgb(64, 224, 208);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(77, 77, 77);
+  }
+  #NumberOfPeople,
+  #BillAmount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #045557;
+  }
+  #tip_amount,
+  #tip_amount2 {
+    color: white;
+    font-size: 20px;
+  }
+  #person1,
+  #person2 {
+    color: #d3e2e285;
+  }
+  #custom::placeholder {
+    font-size: 20px;
+    text-align: center;
+  }
+  #errorMessage {
+    color: rgba(255, 0, 0, 0.616);
+    font-weight: bold;
+    text-align: center;
+  }
+  .styles {
+    border: rgb(64, 224, 208);
+  }
+  #errorZero {
+    color: rgba(255, 0, 0, 0.616);
+    font-family: "STIX Two Math", serif;
+    font-weight: bold;
+  }
+}
+
+/* ON CLICK COLOR rgb(71, 167, 169);*/

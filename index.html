@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="aesthetics.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip Calculator</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <h2 id="main1">SPLI</h2>
+      <h2 id="main2">TTER</h2>
+    </header>
+    <div id="wrapperCalc">
+      <main>
+        <div id="container1">
+          <h4 id="bill_heading">Bill</h4>
+          <i class="fas fa-money-check-alt"></i>
+          <input
+            type="number"
+            id="BillAmount"
+            name="TotalCost"
+            placeholder="0.00"
+            min="0"
+          />
+          <h4 id="sel_tip">Select Tip &#37;</h4>
+        </div>
+        <div id="percent_container" class="yes">
+          <p id="five" class="percentages" data-tip="5">5&#37;</p>
+          <p id="ten" class="percentages" data-tip="10">10&#37;</p>
+          <p id="fifteen" class="percentages" data-tip="15">15&#37;</p>
+          <p id="twenty-five" class="percentages" data-tip="25">25&#37;</p>
+          <p id="fifty" class="percentages" data-tip="50">50&#37;</p>
+          <div id="inputContainer">
+            <input
+              type="number"
+              id="custom"
+              name="custom"
+              placeholder="Custom"
+              min="1"
+            />
+          </div>
+        </div>
+        <div id="errorMessage">Enter all fields correctly</div>
+        <div id="gridNop">
+          <h4 id="nop">Number of People</h4>
+          <p id="errorZero">Can't be zero</p>
+        </div>
+        <div id="wrapper_nop">
+          <i class="fas fa-users"></i>
+          <input
+            type="number"
+            id="NumberOfPeople"
+            name="NumberOfPeople"
+            min="0"
+          />
+        </div>
+      </main>
+      <footer>
+        <div id="gridResults">
+          <div id="flip">
+            <h4 id="tip_amount" class="tip_class">Tip Amount</h4>
+            <p id="person1" class="tip_class">/ person</p>
+          </div>
+          <p id="individual_results">$0.00</p>
+          <div id="flip2">
+            <h4 id="tip_amount2">Total</h4>
+            <p id="person2">/ person</p>
+          </div>
+          <p id="group_results">$0.00</p>
+        </div>
+        <div id="resetContainer">
+          <div id="ResetAllValues">RESET</div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/43510ffd0a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
